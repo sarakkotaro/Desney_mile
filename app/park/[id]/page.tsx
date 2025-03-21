@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+
 import { useParams } from "next/navigation";
 
 const parks = [

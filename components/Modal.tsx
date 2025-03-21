@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Park } from "../types";
 
+// モーダルに渡す型定義
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;

@@ -22,8 +22,10 @@ const milesData = {
 type ParkId = keyof typeof milesData;
 
 const MilesPage: React.FC = () => {
-  const pathname = usePathname();
-  const id = pathname?.split("/")[2] as ParkId; // 👈 型アサーションを追加
+  const pathname = usePathname(); // pathnameを取得
+  console.log("Current Pathname:", pathname); // 追加
+  const id = pathname?.split("/")[2] as ParkId;
+  console.log("Extracted ID:", id); // 追加// パスからidを取得
 
   const milesInfo = milesData[id]; // 型安全にアクセスできる
 
