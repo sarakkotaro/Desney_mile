@@ -1,6 +1,5 @@
 // pages/index.tsx (または任意のページ)
 import { useState, useEffect } from "react";
-import supabase from "@/lib/supabase";
 
 const FlightsPage: React.FC = () => {
   const [flights, setFlights] = useState<any[]>([]); // 型を必要に応じて変更

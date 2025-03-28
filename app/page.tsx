@@ -70,14 +70,23 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 relative">
+      {/* ログインとサインアップボタンを右上に配置 */}
+      <div className="absolute top-6 right-6 flex space-x-4">
+        <button className="bg-blue-500 text-white px-4 py-2 rounded">
+          Login
+        </button>
+        <button className="bg-green-500 text-white px-4 py-2 rounded">
+          Signup
+        </button>
+      </div>
+
       <h1 className="text-3xl text-center mt-9">
         『夢の世界へ、マイルで飛び立とう！』
       </h1>
       <h2 className="text-sm text-center mb-9 mt-4">
         Fly to the world of dreams with miles!
       </h2>
-
       {/* パークのギャラリー */}
       <ParkGallery parks={parks} openModal={openModal} />
 
