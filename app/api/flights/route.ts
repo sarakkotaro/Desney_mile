@@ -1,5 +1,6 @@
+import { supabase } from "@/lib/supabase";
 import { NextResponse } from "next/server";
-import supabase from "@/lib/supabase"; // Supabaseクライアントのインポート
+ // Supabaseクライアントのインポート
 
 export async function GET() {
   console.log("API route handler called: /api/flights");

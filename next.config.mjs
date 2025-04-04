@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    serverActions: true,
+    appDir: false, // `app` ディレクトリの使用を有効にする
   },
   images: {
-    domains: ["nquqzhtbapbnjkyudrwl.supabase.co"],
+    domains: ["nquqzhtbapbnjkyudrwl.supabase.co"], // Supabase 画像ストレージのドメイン
   },
 };
 
